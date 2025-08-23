@@ -1,3 +1,4 @@
+
 # Python ETL & Anomaly Detection
 
 ## Overview
@@ -42,8 +43,11 @@ Optional arguments:
 Example with all options:
 ```bash
 python etl_anomaly.py --orders dataset/orders.xlsx --payments dataset/payments.xlsx --refunds dataset/refunds.xlsx --outdir outputs --date-from 2025-06-15 --date-to 2025-07-15 --offhours "21:00-09:00" --weekend
-
+```
 or 
+
+suggested commands:
+```bash
 ----------------------------
 Basic Run (default output folder):
 
@@ -69,7 +73,7 @@ Full Command (All Options Combined):
 
   python etl_anomaly.py --orders dataset/orders.xlsx --payments dataset/payments.xlsx --refunds dataset/refunds.xlsx --outdir outputs --date-from 2025-06-15 --date-to 2025-07-15 --offhours "21:00-09:00" --weekend
 ----------------------------
-```
+
 
 ## Outputs
 After running, `outputs/` will contain:
