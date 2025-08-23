@@ -24,6 +24,7 @@ ETL_Anomaly_Detection/
 │   └── refunds.xlsx
 ├── outputs/           # Auto-generated
 ├── etl_anomaly.py     # Main script
+├── demo_outputs.py    # get demo outputs
 └── README.md
 ```
 
@@ -74,9 +75,15 @@ Full Command (All Options Combined):
   python etl_anomaly.py --orders dataset/orders.xlsx --payments dataset/payments.xlsx --refunds dataset/refunds.xlsx --outdir outputs --date-from 2025-06-15 --date-to 2025-07-15 --offhours "21:00-09:00" --weekend
 ----------------------------
 
-
 ## Outputs
 After running, `outputs/` will contain:
 - `summary.csv` : daily metrics and anomaly counts
 - `anomalies.csv` : detailed anomalies per order
 - `report.json` : structured JSON report with detailed anomalies and metadata
+
+
+## Demo outputs
+Basic run command:
+```bash
+python demo_outputs.py
+```
